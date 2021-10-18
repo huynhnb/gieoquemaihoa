@@ -62,7 +62,7 @@ public class HienThiThongTinQue extends Fragment {
         haotoTenQue.put("Trạch Lôi Tùy","100110");
         haotoTenQue.put("Thuần Tốn","011011");
         haotoTenQue.put("Phong Thiên Tiểu Súc","111011");
-        haotoTenQue.put("Phong Hỏa Đồng Nhân","101011");
+        haotoTenQue.put("Phong Hỏa Gia Nhân","101011");
         haotoTenQue.put("Phong Lôi Ích","100011");
         haotoTenQue.put("Thiên Lôi Vô Vọng","100111");
         haotoTenQue.put("Hỏa Lội Phệ Hạp","100101");
