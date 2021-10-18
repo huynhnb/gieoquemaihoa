@@ -7,6 +7,8 @@
         android:layout_height="match_parent"
         tools:context=".HienThiThongTinQue">
 
+
+
     <Button
             android:id="@+id/button_second"
             android:layout_width="wrap_content"
@@ -16,4 +18,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:text="Quay Lại" android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TableLayout
+            android:layout_width="409dp"
+            android:layout_height="681dp" tools:layout_editor_absoluteY="1dp" tools:layout_editor_absoluteX="1dp"
+            android:id="@+id/table_layout">
+
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

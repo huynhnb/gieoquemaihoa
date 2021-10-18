@@ -1,5 +1,6 @@
 package com.example.hotroluanque;
 
+import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import android.widget.Spinner;
+import android.widget.*;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
@@ -132,6 +133,29 @@ public class HienThiThongTinQue extends Fragment {
             String qc = ReadLineByLineJava8(queChinh.getTenQue());
             String qh = ReadLineByLineJava8(queHo.getTenQue());
             String qb = ReadLineByLineJava8(queBien.getTenQue());
+
+            // display on table
+            Context ct = getContext();
+
+            TableLayout tb = (TableLayout)view.getRootView().findViewById(R.id.table_layout);
+
+            tb.removeAllViews();
+
+            TableRow r1 = new TableRow(ct);
+
+            TextView tvqc = new TextView(ct);
+            tvqc.setText(qc);
+            r1.addView(tvqc);
+
+            TextView tvqh = new TextView(ct);
+            tvqh.setText(qh);
+            r1.addView(tvqh);
+
+            TextView tvqb = new TextView(ct);
+            tvqb.setText(qb);
+            r1.addView(tvqb);
+
+            tb.addView(r1);
 
         } catch (IOException e) {
             e.printStackTrace();
