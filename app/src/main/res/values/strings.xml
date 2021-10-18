@@ -9,13 +9,19 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="XemQue">Xem Quẻ</string>
+    <string name="lab_chon_que">Chọn Quẻ chính</string>
+    <string name="lab_chon_hao">Chọn Hào biến</string>
 
-    <string-array name="brew_array">
-        <item>Cappuccino</item>
-        <item>Espresso</item>
-        <item>Mocha</item>
-        <item>Caffè Americano</item>
-        <item>Cafe Zorro</item>
+    <string-array name="ls64que_array">
+        <item>Thuần Càn</item>
+        <item>Thuần Khôn</item>
+    </string-array>
+    <string-array name="haobien_array">
+        <item>Hào 1</item>
+        <item>Hào 2</item>
+        <item>Hào 3</item>
+        <item>Hào 4</item>
+        <item>Hào 5</item>
+        <item>Hào 6</item>
     </string-array>
 </resources>
