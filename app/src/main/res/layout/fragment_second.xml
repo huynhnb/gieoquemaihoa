@@ -8,7 +8,6 @@
         tools:context=".HienThiThongTinQue">
 
 
-
     <Button
             android:id="@+id/button_second"
             android:layout_width="wrap_content"
@@ -18,14 +17,41 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:text="Quay Lại" android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
-    <TableLayout
-            android:layout_width="409dp"
-            android:layout_height="681dp" tools:layout_editor_absoluteY="1dp" tools:layout_editor_absoluteX="1dp"
-            android:id="@+id/table_layout">
 
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-        <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
-    </TableLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:layout_weight="1" tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="279dp"
+            tools:layout_editor_absoluteX="-137dp">
+
+        <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:id="@+id/qc"
+                        android:background="@color/cardview_dark_background"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3"
+                        android:id="@+id/qh"
+                        android:background="@color/purple_500"
+                />
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3" android:id="@+id/qb"
+                        android:background="@color/teal_700"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

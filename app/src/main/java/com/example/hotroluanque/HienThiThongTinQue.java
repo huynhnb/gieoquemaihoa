@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -129,33 +130,25 @@ public class HienThiThongTinQue extends Fragment {
 
         QueKinhDich queBien = queChinh.getQueBien();
 
+
+
         try {
             String qc = ReadLineByLineJava8(queChinh.getTenQue());
             String qh = ReadLineByLineJava8(queHo.getTenQue());
             String qb = ReadLineByLineJava8(queBien.getTenQue());
 
-            // display on table
-            Context ct = getContext();
 
-            TableLayout tb = (TableLayout)view.getRootView().findViewById(R.id.table_layout);
 
-            tb.removeAllViews();
+            TextView qcTv = (TextView) view.getRootView().findViewById(R.id.qc);
+            qcTv.setText(qc);
 
-            TableRow r1 = new TableRow(ct);
+            TextView qhTv = (TextView) view.getRootView().findViewById(R.id.qh);
+            qhTv.setText(qh);
 
-            TextView tvqc = new TextView(ct);
-            tvqc.setText(qc);
-            r1.addView(tvqc);
+            TextView qbTv = (TextView) view.getRootView().findViewById(R.id.qb);
+            qbTv.setText(qb);
 
-            TextView tvqh = new TextView(ct);
-            tvqh.setText(qh);
-            r1.addView(tvqh);
 
-            TextView tvqb = new TextView(ct);
-            tvqb.setText(qb);
-            r1.addView(tvqb);
-
-            tb.addView(r1);
 
         } catch (IOException e) {
             e.printStackTrace();

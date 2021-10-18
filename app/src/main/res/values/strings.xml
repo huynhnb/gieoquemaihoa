@@ -11,6 +11,9 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="lab_chon_que">Chọn Quẻ chính</string>
     <string name="lab_chon_hao">Chọn Hào biến</string>
+    <string name="qu_ch_nh">Quẻ Chính</string>
+    <string name="qu_h">Quẻ Hỗ</string>
+    <string name="qu_bi_n">Quẻ Biến</string>
 
     <string-array name="ls64que_array">
         <item>Thuần Càn</item>
