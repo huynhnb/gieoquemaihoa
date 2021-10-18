@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -26,10 +29,18 @@ public class MainActivity extends AppCompatActivity {
 
         FloatingActionButton fab = findViewById(R.id.fab);
 
+        ArrayList listNamo = new ArrayList();
+        listNamo.add("");
+
+        Random rand = new Random();
+        int intRand = rand.nextInt(10);
+
+
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, listNamo.get(intRand).toString(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
