@@ -15,6 +15,68 @@
     <string-array name="ls64que_array">
         <item>Thuần Càn</item>
         <item>Thuần Khôn</item>
+        <item>Thiên Phong Cấu</item>
+        <item>Thiên Sơn Độn</item>
+        <item>Thiên Địa Bỉ</item>
+        <item>Phong Địa Quan</item>
+        <item>Sơn Địa Bác</item>
+        <item>Hỏa Địa Tấn</item>
+        <item>Hỏa Thiên Đại Hữu</item>
+        <item>Thuần Đoài</item>
+        <item>Trạch Thủy Khốn</item>
+        <item>Trạch Địa Tụy</item>
+        <item>Trạch Sơn Hàm</item>
+        <item>Thủy Sơn Kiển</item>
+        <item>Địa Sơn Khiêm</item>
+        <item>Lôi Sơn Tiểu Quá</item>
+        <item>Lôi Trạch Quy Muội</item>
+        <item>Thuần Ly</item>
+        <item>Hỏa Sơn Lữ</item>
+        <item>Hỏa Phong Đỉnh</item>
+        <item>Hỏa Thủy Vị Tế</item>
+        <item>Sơn Thủy Mông</item>
+        <item>Phong Thủy Hoán</item>
+        <item>Thiên Thủy Tụng</item>
+        <item>Thiên Hỏa Đồng Nhân</item>
+        <item>Thuần Chấn</item>
+        <item>Lôi Địa Dự</item>
+        <item>Lôi Thủy Giải</item>
+        <item>Lôi Phong Hằng</item>
+        <item>Địa Phong Thăng</item>
+        <item>Thủy Phong Tỉnh</item>
+        <item>Trạch Phong Đại Quá</item>
+        <item>Trạch Lôi Tùy</item>
+        <item>Thuần Tốn</item>
+        <item>Phong Thiên Tiểu Súc</item>
+        <item>Phong Hỏa Đồng Nhân</item>
+        <item>Phong Lôi Ích</item>
+        <item>Thiên Lôi Vô Vọng</item>
+        <item>Hỏa Lội Phệ Hạp</item>
+        <item>Sơn Lôi Di</item>
+        <item>Sơn Phong Cổ</item>
+        <item>Thuần Khảm</item>
+        <item>Thủy Trạch Tiết</item>
+        <item>Thủy Lôi Truân</item>
+        <item>Thủy Hỏa Ký Tế</item>
+        <item>Trạch Hỏa Cách</item>
+        <item>Lôi Hỏa Phong</item>
+        <item>Địa Hỏa Minh Di</item>
+        <item>Địa Thủy Sư</item>
+        <item>Thuần Cấn</item>
+        <item>Sơn Hỏa Bí</item>
+        <item>Sơn Thiên Đại Súc</item>
+        <item>Sơn Trạch Tổn</item>
+        <item>Hỏa Trạch Khê</item>
+        <item>Thiên Trạch Lý</item>
+        <item>Phong Trạch Trung Phu</item>
+        <item>Phong Sơn Tiệm</item>
+        <item>Địa Lôi Phục</item>
+        <item>Địa Trạch Lâm</item>
+        <item>Địa Thiên Thái</item>
+        <item>Lôi Thiên Đại Tráng</item>
+        <item>Trạch Thiên Quải</item>
+        <item>Thủy Thiên Nhu</item>
+        <item>Thủy Địa Tỷ</item>
     </string-array>
     <string-array name="haobien_array">
         <item>Hào 1</item>
