@@ -39,17 +39,23 @@ public class MainActivity extends AppCompatActivity {
         listNamo.add("Nammo Văn Thụ Bồ Tát");
         listNamo.add("Nammo Vô Tận Ý Bồ Tát");
         listNamo.add("Nammo Nhật Quang Bồ Tát");
-        listNamo.add("Nam mo Di Lạc Đại Như Lai");
+        listNamo.add("Nammo Di Lạc Đại Như Lai");
         listNamo.add("Nammo Kim Thụ Đại Như Lai");
-
-
-
+        listNamo.add("Nammo Nam Hải Đại Như Lai");
+        listNamo.add("Nammo Diệu Thiện Đại Như Lai");        
+        listNamo.add("Nammo Thiên Đỉnh Đại Như Lai");
+        listNamo.add("Nammo Bạch Ngọc Đại Như Lai");        
+        listNamo.add("Nammo Thanh Vân Đại Như Lai");
+        listNamo.add("Nammo Tế Công Đại Như Lai");
+        listNamo.add("Nammo Đại Phương Lục Mẫu");
+        listNamo.add("Nammo Thanh Vân Đại Như Lai");
+        listNamo.add("Nammo Thanh Vân Đại Như Lai");
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Random rand = new Random();
-                int intRand = rand.nextInt(10);
+                int intRand = rand.nextInt(18);
 
 
                 Snackbar.make(view, listNamo.get(intRand).toString(), Snackbar.LENGTH_LONG)
