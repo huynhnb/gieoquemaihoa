@@ -1,6 +1,5 @@
-package com.example.hotroluanque;
+package com.example.hotroluchao;
 
-import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,13 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
