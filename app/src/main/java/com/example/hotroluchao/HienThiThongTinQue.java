@@ -102,13 +102,10 @@ public class HienThiThongTinQue extends Fragment {
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        String queSelected = "Thuần Càn";
-        int hao_bien = 1;
-        Spinner queSelectedSp = (Spinner) view.getRootView().findViewById(R.id.spinner);
 
-        Spinner haobienSelectedSp = (Spinner) view.getRootView().findViewById(R.id.spinner2);
+        Spinner hao6 = (Spinner) view.getRootView().findViewById(R.id.hao6);
 
-        if (queSelectedSp != null) {
+        /*if (queSelectedSp != null) {
             queSelected = queSelectedSp.getSelectedItem().toString();
             System.out.println(queSelected);
         }
@@ -117,11 +114,13 @@ public class HienThiThongTinQue extends Fragment {
             hao_bien = 1 + haobienSelectedSp.getSelectedItemPosition();
             System.out.println(hao_bien);
         }
-
+        */
         // display value
-        String maquechinh = haotoTenQue.get(queSelected);
+        String maquechinh = haotoTenQue.get("queSelected");
 
-        QueKinhDich queChinh = new QueKinhDich(maquechinh, hao_bien);
+        int[] haoDong = new int[7];
+
+        QueKinhDich queChinh = new QueKinhDich(maquechinh, haoDong);
 
         QueKinhDich queHo = queChinh.getQueHo();
 

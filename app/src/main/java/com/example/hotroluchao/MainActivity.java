@@ -53,8 +53,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Random rand = new Random();
                 int intRand = rand.nextInt(18);
-
-
                 Snackbar.make(view, listNamo.get(intRand).toString(), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
