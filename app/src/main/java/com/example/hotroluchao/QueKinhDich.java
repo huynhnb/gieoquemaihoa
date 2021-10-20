@@ -9,7 +9,7 @@ public class QueKinhDich {
     int hao3;
     int hao2;
     int hao1;
-    int hao_bien;
+    int[] hao_bien;
 
     private static final HashMap<String, String> haotoTenQue = new HashMap<>();
 
@@ -142,7 +142,7 @@ public class QueKinhDich {
 
     }
 
-    public QueKinhDich(String initQue, int hao_bien_int) {
+    public QueKinhDich(String initQue, int[] hao_bien_int) {
         hao_bien = hao_bien_int;
         char[] intHao = initQue.toCharArray();
         hao1 = Integer.parseInt(String.valueOf(intHao[0]));
@@ -169,7 +169,7 @@ public class QueKinhDich {
         QueKinhDich queBien = new QueKinhDich();
 
 
-        if (hao_bien == 1) {
+        if (hao_bien[1] == 1) {
             if (hao1 == 0) {
                 queBien.hao1 = 1;
             } else {
@@ -180,7 +180,7 @@ public class QueKinhDich {
             queBien.hao1 = hao1;
         }
 
-        if (hao_bien == 2) {
+        if (hao_bien[2] == 1) {
             if (hao2 == 0) {
                 queBien.hao2 = 1;
             } else {
@@ -190,7 +190,7 @@ public class QueKinhDich {
         } else {
             queBien.hao2 = hao2;
         }
-        if (hao_bien == 3) {
+        if (hao_bien[3] == 1) {
             if (hao3 == 0) {
                 queBien.hao3 = 1;
             } else {
@@ -200,7 +200,7 @@ public class QueKinhDich {
         } else {
             queBien.hao3 = hao3;
         }
-        if (hao_bien == 4) {
+        if (hao_bien[4] == 1) {
             if (hao4 == 0) {
                 queBien.hao4 = 1;
             } else {
@@ -211,7 +211,7 @@ public class QueKinhDich {
             queBien.hao4 = hao4;
         }
 
-        if (hao_bien == 5) {
+        if (hao_bien[5] == 1) {
             if (hao5 == 0) {
                 queBien.hao5 = 1;
             } else {
@@ -222,7 +222,7 @@ public class QueKinhDich {
             queBien.hao5 = hao5;
         }
 
-        if (hao_bien == 6) {
+        if (hao_bien[6] == 1) {
             if (hao6 == 0) {
                 queBien.hao6 = 1;
             } else {
