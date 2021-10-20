@@ -1,5 +1,6 @@
 package com.example.hotroluchao;
 
+import android.annotation.SuppressLint;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -61,7 +62,43 @@ public class HienThiThongTinQue extends Fragment {
 
         int[] haoDong = new int[7];
 
+        CheckBox dong6 = (CheckBox)view.getRootView().findViewById(R.id.dong6);
+        CheckBox dong5 = (CheckBox)view.getRootView().findViewById(R.id.dong5);
+        CheckBox dong4 = (CheckBox)view.getRootView().findViewById(R.id.dong4);
+        CheckBox dong3 = (CheckBox)view.getRootView().findViewById(R.id.dong3);
+        CheckBox dong2 = (CheckBox)view.getRootView().findViewById(R.id.dong2);
+        CheckBox dong1 = (CheckBox)view.getRootView().findViewById(R.id.dong1);
 
+        if (dong1.isChecked()) {
+            haoDong[1] = 1;
+        } else {
+            haoDong[1] = 0;
+        }
+        if (dong2.isChecked()) {
+            haoDong[2] = 1;
+        } else {
+            haoDong[2] = 0;
+        }
+        if (dong3.isChecked()) {
+            haoDong[3] = 1;
+        } else {
+            haoDong[3] = 0;
+        }
+        if (dong4.isChecked()) {
+            haoDong[4] = 1;
+        } else {
+            haoDong[4] = 0;
+        }
+        if (dong5.isChecked()) {
+            haoDong[5] = 1;
+        } else {
+            haoDong[5] = 0;
+        }
+        if (dong6.isChecked()) {
+            haoDong[6] = 1;
+        } else {
+            haoDong[6] = 0;
+        }
 
         QueKinhDich queChinh = new QueKinhDich(maquechinh, haoDong);
 
