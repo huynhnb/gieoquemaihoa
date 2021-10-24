@@ -1,6 +1,7 @@
 package com.example.gieoquemaihoa;
 
 import android.os.Bundle;
+import android.widget.TimePicker;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
+
+
+        TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker);
+        timePicker.setIs24HourView(true);
 
         ArrayList listNamo = new ArrayList();
         listNamo.add("Nammo Đại Nhật Như Lai");
