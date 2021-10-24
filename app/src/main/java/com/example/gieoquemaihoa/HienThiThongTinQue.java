@@ -40,8 +40,11 @@ public class HienThiThongTinQue extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        DatePicker datePicker = (DatePicker) view.getRootView().findViewById(R.id.calendarView);
-        TimePicker timePicker = (TimePicker) view.getRootView().findViewById(R.id.timePicker);
+
+        View pView = view.getRootView();
+
+        DatePicker datePicker = (DatePicker) pView.findViewById(R.id.calendar);
+        TimePicker timePicker = (TimePicker) pView.findViewById(R.id.timepicker);
 
         int intMonth = datePicker.getMonth();
         int intDay = datePicker.getDayOfMonth();

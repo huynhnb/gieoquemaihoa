@@ -28,8 +28,11 @@ public class MainActivity extends AppCompatActivity {
         FloatingActionButton fab = findViewById(R.id.fab);
 
 
-        TimePicker timePicker = (TimePicker) findViewById(R.id.timePicker);
-        timePicker.setIs24HourView(true);
+        TimePicker timePicker = (TimePicker) findViewById(R.id.timepicker);
+        if (timePicker != null) {
+            timePicker.setIs24HourView(true);
+        }
+
 
         ArrayList listNamo = new ArrayList();
         listNamo.add("Nammo Đại Nhật Như Lai");
