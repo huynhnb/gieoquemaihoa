@@ -11,6 +11,14 @@ public class QueKinhDich {
     int hao1;
     int[] hao_bien;
 
+    public int[] getHao_bien() {
+        return hao_bien;
+    }
+
+    public void setHao_bien(int[] hao_bien) {
+        this.hao_bien = hao_bien;
+    }
+
     private static final HashMap<String, String> haotoTenQue = new HashMap<>();
 
     static {

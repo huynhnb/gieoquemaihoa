@@ -39,35 +39,65 @@ public class HienThiThongTinQue extends Fragment {
         DatePicker datePicker = (DatePicker) view.getRootView().findViewById(R.id.calendar);
         TimePicker timePicker = (TimePicker) view.getRootView().findViewById(R.id.timepicker);
 
-        int intMonth = datePicker.getMonth();
+        int intMonth = 1 + datePicker.getMonth();
         int intDay = datePicker.getDayOfMonth();
         int intYear = datePicker.getYear();
 
         Integer intHour = timePicker.getCurrentHour();
         Integer intMin = timePicker.getCurrentMinute();
 
+        Double offset_timezone =Double.valueOf(Util.getCurrentTimezoneOffset());
 
-        String strHao6 = "1";
-        String strHao5 = "1";
-        String strHao4 = "1";
-        String strHao3 = "1";
-        String strHao2 = "1";
-        String strHao1 = "1";
+        Year year = new Year();
+        year.setNumDuongLich(intYear);
+        year = ConvertDuongLichtoAmLich.ConvertDL2AL(year);
+        int[] amlich = VietCalendar.convertSolar2Lunar(intDay, intMonth, intYear,offset_timezone);
 
-        String maquechinh = "111111";
+        int gio = ConvertDuongLichtoAmLich.convertGioDLtoAL(intHour, intMin);
+
+        int totalHaoNgoai = year.getNumIn12Congiap() + amlich[0] + amlich[1];
+
+        int totalHaoNoi = totalHaoNgoai + gio;
+
+        int intQueThuong = 0;
+        int intQueHa = 0;
+        int haobien = 0;
+
+        if (totalHaoNgoai % 8 == 0) {
+            intQueThuong = 8;
+        } else {
+            intQueThuong = totalHaoNgoai % 8;
+        }
+
+        if (totalHaoNoi % 8 == 0) {
+            intQueHa = 8;
+        } else {
+            intQueHa = totalHaoNoi % 8;
+        }
+
+        if (totalHaoNoi % 6 == 0) {
+            haobien = 6;
+        } else {
+            haobien = totalHaoNoi % 6;
+        }
+
+        BatQuai noiquai = Util.getBatQuaiTienThien(intQueThuong);
+        BatQuai ngoaiquai = Util.getBatQuaiTienThien(intQueHa);
 
         int[] haoDong = new int[7];
+        haoDong[haobien] = 1;
 
-        haoDong[1] = 1;
-
-
-        QueKinhDich queChinh = new QueKinhDich(maquechinh, haoDong);
+        QueKinhDich queChinh = new QueKinhDich();
+        queChinh.setHao1(ngoaiquai.hao3.getValue());
+        queChinh.setHao2(ngoaiquai.hao2.getValue());
+        queChinh.setHao3(ngoaiquai.hao1.getValue());
+        queChinh.setHao4(noiquai.hao3.getValue());
+        queChinh.setHao5(noiquai.hao2.getValue());
+        queChinh.setHao6(noiquai.hao1.getValue());
+        queChinh.setHao_bien(haoDong);
 
         QueKinhDich queHo = queChinh.getQueHo();
-
         QueKinhDich queBien = queChinh.getQueBien();
-
-
 
         try {
             String qc = ReadLineByLineJava8(queChinh.getTenQue());
