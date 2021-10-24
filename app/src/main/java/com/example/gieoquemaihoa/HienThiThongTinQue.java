@@ -40,10 +40,10 @@ public class HienThiThongTinQue extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Spinner hao6 = (Spinner) view.getRootView().findViewById(R.id.hao6);
-        Spinner hao5 = (Spinner) view.getRootView().findViewById(R.id.hao5);
-        Spinner hao4 = (Spinner) view.getRootView().findViewById(R.id.hao4);
-        Spinner hao3 = (Spinner) view.getRootView().findViewById(R.id.hao3);
+        Spinner hao6 = (Spinner) view.getRootView().findViewById(R.id.gio);
+        Spinner hao5 = (Spinner) view.getRootView().findViewById(R.id.phut);
+        Spinner hao4 = (Spinner) view.getRootView().findViewById(R.id.ngay);
+        Spinner hao3 = (Spinner) view.getRootView().findViewById(R.id.thang);
         Spinner hao2 = (Spinner) view.getRootView().findViewById(R.id.hao2);
         Spinner hao1 = (Spinner) view.getRootView().findViewById(R.id.hao1);
 
