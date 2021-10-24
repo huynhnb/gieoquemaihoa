@@ -21,11 +21,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 
 public class HienThiThongTinQue extends Fragment {
-    private static final HashMap<String, String> haoToMaAmDuong = new HashMap<>();
-    static {
-        haoToMaAmDuong.put("Dương", "1");
-        haoToMaAmDuong.put("Âm", "0");
-    }
 
     @Override
     public View onCreateView(
@@ -41,10 +36,8 @@ public class HienThiThongTinQue extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        View pView = view.getRootView();
-
-        DatePicker datePicker = (DatePicker) pView.findViewById(R.id.calendar);
-        TimePicker timePicker = (TimePicker) pView.findViewById(R.id.timepicker);
+        DatePicker datePicker = (DatePicker) view.getRootView().findViewById(R.id.calendar);
+        TimePicker timePicker = (TimePicker) view.getRootView().findViewById(R.id.timepicker);
 
         int intMonth = datePicker.getMonth();
         int intDay = datePicker.getDayOfMonth();
@@ -61,13 +54,11 @@ public class HienThiThongTinQue extends Fragment {
         String strHao2 = "1";
         String strHao1 = "1";
 
-        String maquechinh = haoToMaAmDuong.get(strHao1)+ haoToMaAmDuong.get(strHao2) + haoToMaAmDuong.get(strHao3)
-                + haoToMaAmDuong.get(strHao4)+ haoToMaAmDuong.get(strHao5) + haoToMaAmDuong.get(strHao6);
+        String maquechinh = "111111";
 
         int[] haoDong = new int[7];
 
-
-
+        haoDong[1] = 1;
 
 
         QueKinhDich queChinh = new QueKinhDich(maquechinh, haoDong);
