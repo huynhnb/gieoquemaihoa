@@ -40,64 +40,25 @@ public class HienThiThongTinQue extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Spinner hao6 = (Spinner) view.getRootView().findViewById(R.id.gio);
-        Spinner hao5 = (Spinner) view.getRootView().findViewById(R.id.phut);
-        Spinner hao4 = (Spinner) view.getRootView().findViewById(R.id.ngay);
-        Spinner hao3 = (Spinner) view.getRootView().findViewById(R.id.thang);
-        Spinner hao2 = (Spinner) view.getRootView().findViewById(R.id.hao2);
-        Spinner hao1 = (Spinner) view.getRootView().findViewById(R.id.hao1);
 
 
 
-        String strHao6 = hao6.getSelectedItem().toString();
-        String strHao5 = hao5.getSelectedItem().toString();
-        String strHao4 = hao4.getSelectedItem().toString();
-        String strHao3 = hao3.getSelectedItem().toString();
-        String strHao2 = hao2.getSelectedItem().toString();
-        String strHao1 = hao1.getSelectedItem().toString();
+
+        String strHao6 = "1";
+        String strHao5 = "1";
+        String strHao4 = "1";
+        String strHao3 = "1";
+        String strHao2 = "1";
+        String strHao1 = "1";
 
         String maquechinh = haoToMaAmDuong.get(strHao1)+ haoToMaAmDuong.get(strHao2) + haoToMaAmDuong.get(strHao3)
                 + haoToMaAmDuong.get(strHao4)+ haoToMaAmDuong.get(strHao5) + haoToMaAmDuong.get(strHao6);
 
         int[] haoDong = new int[7];
 
-        CheckBox dong6 = (CheckBox)view.getRootView().findViewById(R.id.dong6);
-        CheckBox dong5 = (CheckBox)view.getRootView().findViewById(R.id.dong5);
-        CheckBox dong4 = (CheckBox)view.getRootView().findViewById(R.id.dong4);
-        CheckBox dong3 = (CheckBox)view.getRootView().findViewById(R.id.dong3);
-        CheckBox dong2 = (CheckBox)view.getRootView().findViewById(R.id.dong2);
-        CheckBox dong1 = (CheckBox)view.getRootView().findViewById(R.id.dong1);
 
-        if (dong1.isChecked()) {
-            haoDong[1] = 1;
-        } else {
-            haoDong[1] = 0;
-        }
-        if (dong2.isChecked()) {
-            haoDong[2] = 1;
-        } else {
-            haoDong[2] = 0;
-        }
-        if (dong3.isChecked()) {
-            haoDong[3] = 1;
-        } else {
-            haoDong[3] = 0;
-        }
-        if (dong4.isChecked()) {
-            haoDong[4] = 1;
-        } else {
-            haoDong[4] = 0;
-        }
-        if (dong5.isChecked()) {
-            haoDong[5] = 1;
-        } else {
-            haoDong[5] = 0;
-        }
-        if (dong6.isChecked()) {
-            haoDong[6] = 1;
-        } else {
-            haoDong[6] = 0;
-        }
+
+
 
         QueKinhDich queChinh = new QueKinhDich(maquechinh, haoDong);
 
