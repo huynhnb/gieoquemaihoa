@@ -15,19 +15,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
     />
-    <TextView
-            android:layout_width="370dp"
-            android:layout_height="34dp" android:id="@+id/textView"
-            tools:layout_editor_absoluteX="16dp" android:text="Chọn Ngày Giờ Phút Động Tâm"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="26dp"/>
     <CalendarView
-            android:layout_width="371dp"
-            android:layout_height="359dp" android:id="@+id/calendarView"
-            tools:layout_editor_absoluteX="16dp" android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView"/>
-    <TimePicker android:layout_width="370dp" android:layout_height="222dp"
-                tools:layout_editor_absoluteX="16dp" android:layout_marginTop="8dp"
-                app:layout_constraintTop_toBottomOf="@+id/calendarView"></TimePicker>
+            android:layout_width="374dp"
+            android:layout_height="326dp" android:id="@+id/calendarView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:ignore="MissingConstraints" tools:layout_editor_absoluteY="4dp"/>
+    <TimePicker android:layout_width="371dp" android:layout_height="216dp"
+                tools:layout_editor_absoluteX="16dp" android:layout_marginTop="24dp"
+                app:layout_constraintTop_toBottomOf="@+id/calendarView" tools:ignore="MissingConstraints"
+                android:timePickerMode="spinner"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
