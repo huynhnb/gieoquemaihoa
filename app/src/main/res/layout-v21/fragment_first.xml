@@ -15,7 +15,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
     />
-    <CalendarView
+    <DatePicker
             android:layout_width="374dp"
             android:layout_height="326dp" android:id="@+id/calendar"
             tools:layout_editor_absoluteX="16dp"
