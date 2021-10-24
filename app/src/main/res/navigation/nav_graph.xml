@@ -7,7 +7,7 @@
 
     <fragment
             android:id="@+id/FirstFragment"
-            android:name="com.example.hotroluchao.SelectThongTinQue"
+            android:name="com.example.gieoquemaihoa.SelectThongTinQue"
             android:label="@string/first_fragment_label"
             tools:layout="@layout/fragment_first">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
             android:id="@+id/SecondFragment"
-            android:name="com.example.hotroluchao.HienThiThongTinQue"
+            android:name="com.example.gieoquemaihoa.HienThiThongTinQue"
             android:label="@string/second_fragment_label"
             tools:layout="@layout/fragment_second">
 

@@ -1,4 +1,4 @@
-package com.example.hotroluchao;
+package com.example.gieoquemaihoa;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;

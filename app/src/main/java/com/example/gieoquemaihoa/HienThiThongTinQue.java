@@ -1,6 +1,5 @@
-package com.example.hotroluchao;
+package com.example.gieoquemaihoa;
 
-import android.annotation.SuppressLint;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;

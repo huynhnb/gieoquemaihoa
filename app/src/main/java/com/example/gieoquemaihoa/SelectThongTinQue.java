@@ -1,4 +1,4 @@
-package com.example.hotroluchao;
+package com.example.gieoquemaihoa;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
