@@ -50,10 +50,12 @@ public class HienThiThongTinQue extends Fragment {
 
         Double offset_timezone =Double.valueOf(Util.getCurrentTimezoneOffset());
 
-        Year year = new Year();
-        year.setNumDuongLich(intYear);
-        year = ConvertDuongLichtoAmLich.ConvertDL2AL(year);
         int[] amlich = VietCalendar.convertSolar2Lunar(intDay, intMonth, intYear,offset_timezone);
+
+        Year year = new Year();
+        year.setNumDuongLich(amlich[2]);
+        year = ConvertDuongLichtoAmLich.ConvertDL2AL(year);
+
 
         int gio = ConvertDuongLichtoAmLich.convertGioDLtoAL(intHour, intMin);
 
