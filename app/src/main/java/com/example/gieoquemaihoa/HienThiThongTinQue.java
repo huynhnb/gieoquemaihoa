@@ -89,7 +89,7 @@ public class HienThiThongTinQue extends Fragment {
         int[] haoDong = new int[7];
         haoDong[haobien] = 1;
         //getActivity().setTitle("Gieo Quẻ Mai Hoa - Hào Biến "+haobien);
-        getActivity().setTitle(Html.fromHtml("<small>Gieo Quẻ Mai Hoa - Hào Biến "+haobien+"</small>"));
+        getActivity().setTitle(Html.fromHtml("<small>Hào Biến "+haobien+" - Luận Quẻ</small>"));
 
         QueKinhDich queChinh = new QueKinhDich();
         queChinh.setHao1(ngoaiquai.hao3.getValue());
