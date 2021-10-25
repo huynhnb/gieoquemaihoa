@@ -1,8 +1,10 @@
 package com.example.gieoquemaihoa;
 
+import android.app.ActionBar;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -86,8 +88,8 @@ public class HienThiThongTinQue extends Fragment {
 
         int[] haoDong = new int[7];
         haoDong[haobien] = 1;
-
-        getActivity().setTitle("Gieo Quẻ Mai Hoa - Hào Biến "+haobien);
+        //getActivity().setTitle("Gieo Quẻ Mai Hoa - Hào Biến "+haobien);
+        getActivity().setTitle(Html.fromHtml("<small>Gieo Quẻ Mai Hoa - Hào Biến "+haobien+"</small>"));
 
         QueKinhDich queChinh = new QueKinhDich();
         queChinh.setHao1(ngoaiquai.hao3.getValue());

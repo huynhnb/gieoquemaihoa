@@ -1,6 +1,7 @@
 package com.example.gieoquemaihoa;
 
 import android.os.Bundle;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ public class SelectThongTinQue extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        getActivity().setTitle("Gieo Quẻ Mai Hoa - Giờ động tâm");
+        getActivity().setTitle(Html.fromHtml("<small>Gieo Quẻ Mai Hoa - Giờ động tâm</small>"));
 
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
