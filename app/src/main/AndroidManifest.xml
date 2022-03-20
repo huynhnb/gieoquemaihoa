@@ -11,6 +11,7 @@
             android:theme="@style/Theme.Hotroluanque">
         <activity
                 android:name="com.example.gieoquemaihoa.MainActivity"
+                android:exported="true"
                 android:label="@string/app_name"
                 android:theme="@style/Theme.Hotroluanque.NoActionBar">
             <intent-filter>
